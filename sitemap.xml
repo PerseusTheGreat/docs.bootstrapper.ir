@@ -106,7 +106,7 @@
 <loc>http://docs.bootstrapper.ir/docs/4.3/examples/</loc>
 </url>
 <url>
-<loc>http://docs.bootstrapper.ir/docs/4.3/examples/sticky-footer-navbar/</loc>
+<loc>http://docs.bootstrapper.ir/docs/4.3/examples/tooltip-viewport/</loc>
 </url>
 <url>
 <loc>http://docs.bootstrapper.ir/docs/4.3/examples/album/</loc>
@@ -164,6 +164,9 @@
 </url>
 <url>
 <loc>http://docs.bootstrapper.ir/docs/4.3/examples/sticky-footer/</loc>
+</url>
+<url>
+<loc>http://docs.bootstrapper.ir/docs/4.3/examples/sticky-footer-navbar/</loc>
 </url>
 <url>
 <loc>http://docs.bootstrapper.ir/docs/4.3/components/input-group/</loc>
