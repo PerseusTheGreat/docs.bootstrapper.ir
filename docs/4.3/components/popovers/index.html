@@ -595,7 +595,6 @@
   Popover on right
 <span class="nt">&lt;/button&gt;</span>
 
-
 <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> 
         <span class="na">class=</span><span class="s">"btn btn-secondary"</span> 
         <span class="na">data-container=</span><span class="s">"body"</span> 
@@ -604,6 +603,7 @@
         <span class="na">data-content=</span><span class="s">"Vivamus sagittis lacus vel augue laoreet rutrum faucibus."</span><span class="nt">&gt;</span>
   Popover on top
 <span class="nt">&lt;/button&gt;</span>
+
 <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> 
         <span class="na">class=</span><span class="s">"btn btn-secondary"</span> 
         <span class="na">data-container=</span><span class="s">"body"</span> 
@@ -854,7 +854,7 @@
 
 <h4 id="popovershow"><code class="highlighter-rouge">.popover('show')</code></h4>
 
-<p>Reveals an element’s popover. <strong>Returns to the caller before the popover has actually been shown</strong> (i.e. before the <code class="highlighter-rouge">shown.bs.popover</code> event occurs). This is considered a “manual” triggering of the popover. Popovers whose both title and content are zero-length are never displayed.</p>
+<p>Reveals an element’s popover. <strong>Returns to the caller before the popover has actually been shown</strong> (i.e. before the <code class="highlighter-rouge">shown.bs.popover</code> event occurs). This is considered a “manual” triggering of the popover. Popovers whose title and content are both zero-length are never displayed.</p>
 
 <figure class="highlight"><pre><code class="language-js" data-lang="js"><span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">#element</span><span class="dl">'</span><span class="p">).</span><span class="nx">popover</span><span class="p">(</span><span class="dl">'</span><span class="s1">show</span><span class="dl">'</span><span class="p">)</span></code></pre></figure>
 
