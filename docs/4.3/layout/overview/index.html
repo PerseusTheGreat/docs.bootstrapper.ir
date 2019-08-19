@@ -468,7 +468,13 @@
         
           <nav class="d-none d-xl-block col-xl-2 bd-toc" aria-label="Secondary navigation">
             <ul class="section-nav">
-<li class="toc-entry toc-h2"><a href="#containers">Containers</a></li>
+<li class="toc-entry toc-h2"><a href="#containers">Containers</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#all-in-one">All-in-one</a></li>
+<li class="toc-entry toc-h3"><a href="#fluid">Fluid</a></li>
+<li class="toc-entry toc-h3"><a href="#responsive">Responsive</a></li>
+</ul>
+</li>
 <li class="toc-entry toc-h2"><a href="#responsive-breakpoints">Responsive breakpoints</a></li>
 <li class="toc-entry toc-h2"><a href="#z-index">Z-index</a></li>
 </ul>
@@ -483,35 +489,122 @@
 -->
           <h2 id="containers">Containers</h2>
 
-<p>Containers are the most basic layout element in Bootstrap and are <strong>required when using our default grid system</strong>. Choose from a responsive, fixed-width container (meaning its <code class="highlighter-rouge">max-width</code> changes at each breakpoint) or fluid-width (meaning it’s <code class="highlighter-rouge">100%</code> wide all the time).</p>
+<p>Containers are the most basic layout element in Bootstrap and are <strong>required when using our default grid system</strong>. Containers are used to contain, pad, and (sometimes) center the content within them. While containers <em>can</em> be nested, most layouts do not require a nested container.</p>
 
-<p>While containers <em>can</em> be nested, most layouts do not require a nested container.</p>
+<p>Bootstrap comes with three different containers:</p>
 
-<div class="bd-example">
-  <div class="bd-example-container">
-    <div class="bd-example-container-header"></div>
-    <div class="bd-example-container-sidebar"></div>
-    <div class="bd-example-container-body"></div>
-  </div>
-</div>
+<ul>
+  <li><code class="highlighter-rouge">.container</code>, which sets a <code class="highlighter-rouge">max-width</code> at each responsive breakpoint</li>
+  <li><code class="highlighter-rouge">.container-fluid</code>, which is <code class="highlighter-rouge">width: 100%</code> at all breakpoints</li>
+  <li><code class="highlighter-rouge">.container-{breakpoint}</code>, which is <code class="highlighter-rouge">width: 100%</code> until the specified breakpoint</li>
+</ul>
+
+<p>The table below illustrates how each container’s <code class="highlighter-rouge">max-width</code> compares to the original <code class="highlighter-rouge">.container</code> and <code class="highlighter-rouge">.container-fluid</code> across each breakpoint.</p>
+
+<p>See them in action and compare them in our <a href="/docs/4.3/examples/grid/#containers">Grid example</a>.</p>
+
+<table class="table text-right">
+  <thead>
+    <tr>
+      <th></th>
+      <th>
+        Extra small<br />
+        <span class="font-weight-normal">&lt;576px</span>
+      </th>
+      <th>
+        Small<br />
+        <span class="font-weight-normal">&ge;576px</span>
+      </th>
+      <th>
+        Medium<br />
+        <span class="font-weight-normal">&ge;768px</span>
+      </th>
+      <th>
+        Large<br />
+        <span class="font-weight-normal">&ge;992px</span>
+      </th>
+      <th>
+        Extra large<br />
+        <span class="font-weight-normal">&ge;1200px</span>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>.container</code></td>
+      <td class="text-muted">100%</td>
+      <td>540px</td>
+      <td>720px</td>
+      <td>960px</td>
+      <td>1140px</td>
+    </tr>
+    <tr>
+      <td><code>.container-sm</code></td>
+      <td class="text-muted">100%</td>
+      <td>540px</td>
+      <td>720px</td>
+      <td>960px</td>
+      <td>1140px</td>
+    </tr>
+    <tr>
+      <td><code>.container-md</code></td>
+      <td class="text-muted">100%</td>
+      <td class="text-muted">100%</td>
+      <td>720px</td>
+      <td>960px</td>
+      <td>1140px</td>
+    </tr>
+    <tr>
+      <td><code>.container-lg</code></td>
+      <td class="text-muted">100%</td>
+      <td class="text-muted">100%</td>
+      <td class="text-muted">100%</td>
+      <td>960px</td>
+      <td>1140px</td>
+    </tr>
+    <tr>
+      <td><code>.container-xl</code></td>
+      <td class="text-muted">100%</td>
+      <td class="text-muted">100%</td>
+      <td class="text-muted">100%</td>
+      <td class="text-muted">100%</td>
+      <td>1140px</td>
+    </tr>
+    <tr>
+      <td><code>.container-fluid</code></td>
+      <td class="text-muted">100%</td>
+      <td class="text-muted">100%</td>
+      <td class="text-muted">100%</td>
+      <td class="text-muted">100%</td>
+      <td class="text-muted">100%</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="all-in-one">All-in-one</h3>
+
+<p>Our default <code class="highlighter-rouge">.container</code> class is a responsive, fixed-width container, meaning its <code class="highlighter-rouge">max-width</code> changes at each breakpoint.</p>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
   <span class="c">&lt;!-- Content here --&gt;</span>
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
-<p>Use <code class="highlighter-rouge">.container-fluid</code> for a full width container, spanning the entire width of the viewport.</p>
+<h3 id="fluid">Fluid</h3>
 
-<div class="bd-example">
-  <div class="bd-example-container bd-example-container-fluid">
-    <div class="bd-example-container-header"></div>
-    <div class="bd-example-container-sidebar"></div>
-    <div class="bd-example-container-body"></div>
-  </div>
-</div>
+<p>Use <code class="highlighter-rouge">.container-fluid</code> for a full width container, spanning the entire width of the viewport.</p>
 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-fluid"</span><span class="nt">&gt;</span>
   ...
 <span class="nt">&lt;/div&gt;</span></code></pre></figure>
+
+<h3 id="responsive">Responsive</h3>
+
+<p>Responsive containers are new in Bootstrap v4.4. They allow you to specify a class that is 100% wide until the specified breakpoint is reached, after which we apply <code class="highlighter-rouge">max-width</code>s for each of the higher breakpoints. For example, <code class="highlighter-rouge">.container-sm</code> is 100% wide to start until the <code class="highlighter-rouge">sm</code> breakpoint is reached, where it will scale up with <code class="highlighter-rouge">md</code>, <code class="highlighter-rouge">lg</code>, and <code class="highlighter-rouge">xl</code>.</p>
+
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-sm"</span><span class="nt">&gt;</span>100% wide until small breakpoint<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-md"</span><span class="nt">&gt;</span>100% wide until medium breakpoint<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-lg"</span><span class="nt">&gt;</span>100% wide until large breakpoint<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container-xl"</span><span class="nt">&gt;</span>100% wide until extra large breakpoint<span class="nt">&lt;/div&gt;</span></code></pre></figure>
 
 <h2 id="responsive-breakpoints">Responsive breakpoints</h2>
 
