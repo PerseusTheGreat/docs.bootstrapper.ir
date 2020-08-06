@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 <meta name="description" content="The most popular HTML, CSS, and JS library in the world."/>
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors"/>
-<meta name="generator" content="Jekyll v4.0.1"/>
+<meta name="generator" content="Jekyll v4.1.1"/>
 
 <meta name="docsearch:language" content="en"/>
 <meta name="docsearch:version" content="4.5"/>
@@ -63,9 +63,10 @@
 
   </head>
   <body>
-    <a class="skippy sr-only sr-only-focusable" href="#content">
-  <span class="skippy-text">Skip to main content</span>
-</a>
+    <div class="skippy overflow-hidden">
+  <div class="container-xl">
+    <a class="sr-only sr-only-focusable d-inline-flex p-2 m-1" href="#content">Skip to main content</a><a class="sr-only sr-only-focusable d-none d-md-inline-flex p-2 m-1" href="#bd-docs-nav">Skip to docs navigation</a></div>
+</div>
 
 
     <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
@@ -105,13 +106,6 @@
       <div class="dropdown-menu dropdown-menu-md-left" aria-labelledby="bd-versions">
         <a class="dropdown-item active" href="/docs/4.5/">Latest RTL (4.5.x)</a>
         <a class="dropdown-item" href="https://getbootstrap.com/docs/4.5/">Latest LTR (4.5.x)</a>
-        <!--
-        <a class="dropdown-item" href="https://getbootstrap.com/docs/4.4/">v4.4.1</a>
-        <a class="dropdown-item" href="https://getbootstrap.com/docs/4.3/">v4.3.1</a>
-        <a class="dropdown-item" href="https://getbootstrap.com/docs/4.2/">v4.2.1</a>
-        <a class="dropdown-item" href="https://getbootstrap.com/docs/4.1/">v4.1.3</a>
-        <a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/">v4.0.0</a>
-        -->
         <div class="dropdown-divider"></div>
         <a class="dropdown-item" href="https://getbootstrap.com/docs/3.4/">v3.4.1</a>
         <a class="dropdown-item" href="https://getbootstrap.com/2.3.2/">v2.3.2</a>
@@ -478,7 +472,10 @@
         
 
         <main class="col-md-9 col-xl-8 py-md-3 pr-md-5 bd-content" role="main">
-          <h1 class="bd-title" id="content">Wall of browser bugs</h1>
+          <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between">
+            <a class="btn btn-sm btn-bd-light my-2 my-md-0" href="https://github.com/PerseusTheGreat/bootstrap-4-rtl/tree/v4-dev/site/docs/4.5/browser-bugs.md" title="View and edit this file on GitHub" target="_blank" rel="noopener">View on GitHub</a>
+            <h1 class="bd-title" id="content">Wall of browser bugs</h1>
+          </div>
           <p class="bd-lead"></p>
           <!--
 <script async src="https://cdn.carbonads.com/carbon.js?serve=CKYIKKJL&placement=getbootstrapcom" id="_carbonads_js"></script>
@@ -532,7 +529,7 @@
     <tr>
       <td>Edge
 </td>
-      <td><p>Native browser tooltip for <code class="highlighter-rouge">title</code> shows on first keyboard focus (in addition to custom tooltip component)</p>
+      <td><p>Native browser tooltip for <code class="language-plaintext highlighter-rouge">title</code> shows on first keyboard focus (in addition to custom tooltip component)</p>
 </td>
       <td>
     <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/6793560/">Edge issue #6793560</a>
@@ -547,7 +544,7 @@
     <tr>
       <td>Edge
 </td>
-      <td><p>Hovered element still remains in <code class="highlighter-rouge">:hover</code> state after scrolling away.</p>
+      <td><p>Hovered element still remains in <code class="language-plaintext highlighter-rouge">:hover</code> state after scrolling away.</p>
 </td>
       <td>
     <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/5381673/">Edge issue #5381673</a>
@@ -562,7 +559,7 @@
     <tr>
       <td>Edge
 </td>
-      <td><p>CSS <code class="highlighter-rouge">border-radius</code> sometimes causes lines of bleed-through of the <code class="highlighter-rouge">background-color</code> of the parent element.</p>
+      <td><p>CSS <code class="language-plaintext highlighter-rouge">border-radius</code> sometimes causes lines of bleed-through of the <code class="language-plaintext highlighter-rouge">background-color</code> of the parent element.</p>
 </td>
       <td>
     <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/3342037/">Edge issue #3342037</a>
@@ -577,7 +574,7 @@
     <tr>
       <td>Edge
 </td>
-      <td><p><code class="highlighter-rouge">background</code> of <code class="highlighter-rouge">&lt;tr&gt;</code> is only applied to first child cell instead of all cells in the row</p>
+      <td><p><code class="language-plaintext highlighter-rouge">background</code> of <code class="language-plaintext highlighter-rouge">&lt;tr&gt;</code> is only applied to first child cell instead of all cells in the row</p>
 </td>
       <td>
     <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/5865620/">Edge issue #5865620</a>
@@ -607,7 +604,7 @@
     <tr>
       <td>Edge
 </td>
-      <td><p>Hovering over descendant SVG element fires <code class="highlighter-rouge">mouseleave</code> event at ancestor</p>
+      <td><p>Hovering over descendant SVG element fires <code class="language-plaintext highlighter-rouge">mouseleave</code> event at ancestor</p>
 </td>
       <td>
     <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/7787318/">Edge issue #7787318</a>
@@ -622,7 +619,7 @@
     <tr>
       <td>Edge
 </td>
-      <td><p>Active <code class="highlighter-rouge">position: fixed;</code> <code class="highlighter-rouge">&lt;button&gt;</code> flickers when scrolling</p>
+      <td><p>Active <code class="language-plaintext highlighter-rouge">position: fixed;</code> <code class="language-plaintext highlighter-rouge">&lt;button&gt;</code> flickers when scrolling</p>
 </td>
       <td>
     <a href="https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/8770398/">Edge issue #8770398</a>
@@ -637,7 +634,7 @@
     <tr>
       <td>Firefox
 </td>
-      <td><p><code class="highlighter-rouge">.table-bordered</code> with an empty <code class="highlighter-rouge">&lt;tbody&gt;</code> is missing borders.</p>
+      <td><p><code class="language-plaintext highlighter-rouge">.table-bordered</code> with an empty <code class="language-plaintext highlighter-rouge">&lt;tbody&gt;</code> is missing borders.</p>
 </td>
       <td>
     <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1023761">Mozilla bug #1023761</a>
@@ -667,7 +664,7 @@
     <tr>
       <td>Firefox
 </td>
-      <td><p><code class="highlighter-rouge">focus</code> events should not be fired at the <code class="highlighter-rouge">document</code> object</p>
+      <td><p><code class="language-plaintext highlighter-rouge">focus</code> events should not be fired at the <code class="language-plaintext highlighter-rouge">document</code> object</p>
 </td>
       <td>
     <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=1228802">Mozilla bug #1228802</a>
@@ -697,7 +694,7 @@
     <tr>
       <td>Firefox
 </td>
-      <td><p>Mouse sometimes not within element for purposes of <code class="highlighter-rouge">mouseenter</code>/<code class="highlighter-rouge">mouseleave</code> when it’s within SVG elements</p>
+      <td><p>Mouse sometimes not within element for purposes of <code class="language-plaintext highlighter-rouge">mouseenter</code>/<code class="language-plaintext highlighter-rouge">mouseleave</code> when it’s within SVG elements</p>
 </td>
       <td>
     <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=577785">Mozilla bug #577785</a>
@@ -727,7 +724,7 @@
     <tr>
       <td>Firefox (Windows)
 </td>
-      <td><p>Right border of <code class="highlighter-rouge">&lt;select&gt;</code> menu is sometimes missing when screen is set to uncommon resolution</p>
+      <td><p>Right border of <code class="language-plaintext highlighter-rouge">&lt;select&gt;</code> menu is sometimes missing when screen is set to uncommon resolution</p>
 </td>
       <td>
     <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=545685">Mozilla bug #545685</a>
@@ -757,7 +754,7 @@
     <tr>
       <td>Chrome (macOS)
 </td>
-      <td><p>Clicking above <code class="highlighter-rouge">&lt;input type="number"&gt;</code> increment button flashes the decrement button.</p>
+      <td><p>Clicking above <code class="language-plaintext highlighter-rouge">&lt;input type="number"&gt;</code> increment button flashes the decrement button.</p>
 </td>
       <td>
     <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=419108">Chromium issue #419108</a>
@@ -793,7 +790,7 @@
     <tr>
       <td>Chrome
 </td>
-      <td><p><code class="highlighter-rouge">table-cell</code> borders not overlapping despite <code class="highlighter-rouge">margin-right: -1px</code></p>
+      <td><p><code class="language-plaintext highlighter-rouge">table-cell</code> borders not overlapping despite <code class="language-plaintext highlighter-rouge">margin-right: -1px</code></p>
 </td>
       <td>
     <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=749848">Chromium issue #749848</a>
@@ -811,7 +808,7 @@
     <tr>
       <td>Chrome
 </td>
-      <td><p>Don’t make <code class="highlighter-rouge">:hover</code> sticky on touch-friendly webpages</p>
+      <td><p>Don’t make <code class="language-plaintext highlighter-rouge">:hover</code> sticky on touch-friendly webpages</p>
 </td>
       <td>
     <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=370155">Chromium issue #370155</a>
@@ -826,7 +823,7 @@
     <tr>
       <td>Chrome
 </td>
-      <td><p><code class="highlighter-rouge">position: absolute</code> element that’s wider than its column is incorrectly clipped to column boundary</p>
+      <td><p><code class="language-plaintext highlighter-rouge">position: absolute</code> element that’s wider than its column is incorrectly clipped to column boundary</p>
 </td>
       <td>
     <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=269061">Chromium issue #269061</a>
@@ -841,7 +838,7 @@
     <tr>
       <td>Chrome
 </td>
-      <td><p>Significant performance hit for dynamic SVGs with text depending on the number of fonts in <code class="highlighter-rouge">font-family</code>.</p>
+      <td><p>Significant performance hit for dynamic SVGs with text depending on the number of fonts in <code class="language-plaintext highlighter-rouge">font-family</code>.</p>
 </td>
       <td>
     <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=781344">Chromium issue #781344</a>
@@ -856,7 +853,7 @@
     <tr>
       <td>Safari
 </td>
-      <td><p><code class="highlighter-rouge">rem</code> units in media queries should be calculated using <code class="highlighter-rouge">font-size: initial</code>, not the root element’s <code class="highlighter-rouge">font-size</code></p>
+      <td><p><code class="language-plaintext highlighter-rouge">rem</code> units in media queries should be calculated using <code class="language-plaintext highlighter-rouge">font-size: initial</code>, not the root element’s <code class="language-plaintext highlighter-rouge">font-size</code></p>
 </td>
       <td>
     <a href="https://bugs.webkit.org/show_bug.cgi?id=156684">WebKit bug #156684</a>
@@ -886,7 +883,7 @@
     <tr>
       <td>Safari
 </td>
-      <td><p>CSS <code class="highlighter-rouge">min-width</code> and <code class="highlighter-rouge">max-width</code> media features should not round fractional pixel</p>
+      <td><p>CSS <code class="language-plaintext highlighter-rouge">min-width</code> and <code class="language-plaintext highlighter-rouge">max-width</code> media features should not round fractional pixel</p>
 </td>
       <td>
     <a href="https://bugs.webkit.org/show_bug.cgi?id=178261">WebKit bug #178261</a>
@@ -901,7 +898,7 @@
     <tr>
       <td>Safari (macOS)
 </td>
-      <td><p><code class="highlighter-rouge">px</code>, <code class="highlighter-rouge">em</code>, and <code class="highlighter-rouge">rem</code> should all behave the same in media queries when page zoom is applied</p>
+      <td><p><code class="language-plaintext highlighter-rouge">px</code>, <code class="language-plaintext highlighter-rouge">em</code>, and <code class="language-plaintext highlighter-rouge">rem</code> should all behave the same in media queries when page zoom is applied</p>
 </td>
       <td>
     <a href="https://bugs.webkit.org/show_bug.cgi?id=156687">WebKit bug #156687</a>
@@ -916,7 +913,7 @@
     <tr>
       <td>Safari (macOS)
 </td>
-      <td><p>Weird button behavior with some <code class="highlighter-rouge">&lt;input type="number"&gt;</code> elements.</p>
+      <td><p>Weird button behavior with some <code class="language-plaintext highlighter-rouge">&lt;input type="number"&gt;</code> elements.</p>
 </td>
       <td>
     <a href="https://bugs.webkit.org/show_bug.cgi?id=137269">WebKit bug #137269</a>, 
@@ -940,7 +937,7 @@
     <tr>
       <td>Safari (macOS)
 </td>
-      <td><p>Small font size when printing webpage with fixed-width <code class="highlighter-rouge">.container</code>.</p>
+      <td><p>Small font size when printing webpage with fixed-width <code class="language-plaintext highlighter-rouge">.container</code>.</p>
 </td>
       <td>
     <a href="https://bugs.webkit.org/show_bug.cgi?id=138192">WebKit bug #138192</a>, 
@@ -958,7 +955,7 @@
     <tr>
       <td>Safari (iOS)
 </td>
-      <td><p><code class="highlighter-rouge">transform: translate3d(0,0,0);</code> rendering bug.</p>
+      <td><p><code class="language-plaintext highlighter-rouge">transform: translate3d(0,0,0);</code> rendering bug.</p>
 </td>
       <td>
     <a href="https://bugs.webkit.org/show_bug.cgi?id=138162">WebKit bug #138162</a>, 
@@ -994,7 +991,7 @@
     <tr>
       <td>Safari (iOS)
 </td>
-      <td><p>Can’t move cursor to start of text after entering long string of text into <code class="highlighter-rouge">&lt;input type="text"&gt;</code></p>
+      <td><p>Can’t move cursor to start of text after entering long string of text into <code class="language-plaintext highlighter-rouge">&lt;input type="text"&gt;</code></p>
 </td>
       <td>
     <a href="https://bugs.webkit.org/show_bug.cgi?id=148061">WebKit bug #148061</a>, 
@@ -1012,7 +1009,7 @@
     <tr>
       <td>Safari (iOS)
 </td>
-      <td><p><code class="highlighter-rouge">display: block</code> causes text of temporal <code class="highlighter-rouge">&lt;input&gt;</code>s to become vertically misaligned</p>
+      <td><p><code class="language-plaintext highlighter-rouge">display: block</code> causes text of temporal <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code>s to become vertically misaligned</p>
 </td>
       <td>
     <a href="https://bugs.webkit.org/show_bug.cgi?id=139848">WebKit bug #139848</a>, 
@@ -1033,7 +1030,7 @@
     <tr>
       <td>Safari (iOS)
 </td>
-      <td><p>Tapping on <code class="highlighter-rouge">&lt;body&gt;</code> doesn’t fire <code class="highlighter-rouge">click</code> events</p>
+      <td><p>Tapping on <code class="language-plaintext highlighter-rouge">&lt;body&gt;</code> doesn’t fire <code class="language-plaintext highlighter-rouge">click</code> events</p>
 </td>
       <td>
     <a href="https://bugs.webkit.org/show_bug.cgi?id=151933">WebKit bug #151933</a>
@@ -1048,7 +1045,7 @@
     <tr>
       <td>Safari (iOS)
 </td>
-      <td><p><code class="highlighter-rouge">position:fixed</code> is incorrectly positioned when tab bar is visible on iPhone 6S+ Safari</p>
+      <td><p><code class="language-plaintext highlighter-rouge">position:fixed</code> is incorrectly positioned when tab bar is visible on iPhone 6S+ Safari</p>
 </td>
       <td>
     <a href="https://bugs.webkit.org/show_bug.cgi?id=153056">WebKit bug #153056</a>
@@ -1063,7 +1060,7 @@
     <tr>
       <td>Safari (iOS)
 </td>
-      <td><p>Tapping into an <code class="highlighter-rouge">&lt;input&gt;</code> within a <code class="highlighter-rouge">position:fixed</code> element scrolls to the top of the page</p>
+      <td><p>Tapping into an <code class="language-plaintext highlighter-rouge">&lt;input&gt;</code> within a <code class="language-plaintext highlighter-rouge">position:fixed</code> element scrolls to the top of the page</p>
 </td>
       <td>
     <a href="https://bugs.webkit.org/show_bug.cgi?id=153224">WebKit bug #153224</a>, 
@@ -1081,7 +1078,7 @@
     <tr>
       <td>Safari (iOS)
 </td>
-      <td><p><code class="highlighter-rouge">&lt;body&gt;</code> with <code class="highlighter-rouge">overflow:hidden</code> CSS is scrollable on iOS</p>
+      <td><p><code class="language-plaintext highlighter-rouge">&lt;body&gt;</code> with <code class="language-plaintext highlighter-rouge">overflow:hidden</code> CSS is scrollable on iOS</p>
 </td>
       <td>
     <a href="https://bugs.webkit.org/show_bug.cgi?id=153852">WebKit bug #153852</a>
@@ -1096,7 +1093,7 @@
     <tr>
       <td>Safari (iOS)
 </td>
-      <td><p>Scroll gesture in text field in <code class="highlighter-rouge">position:fixed</code> element sometimes scrolls <code class="highlighter-rouge">&lt;body&gt;</code> instead of scrollable ancestor</p>
+      <td><p>Scroll gesture in text field in <code class="language-plaintext highlighter-rouge">position:fixed</code> element sometimes scrolls <code class="language-plaintext highlighter-rouge">&lt;body&gt;</code> instead of scrollable ancestor</p>
 </td>
       <td>
     <a href="https://bugs.webkit.org/show_bug.cgi?id=153856">WebKit bug #153856</a>
@@ -1111,7 +1108,7 @@
     <tr>
       <td>Safari (iOS)
 </td>
-      <td><p>Modal with <code class="highlighter-rouge">-webkit-overflow-scrolling: touch</code> doesn’t become scrollable after added text makes it taller</p>
+      <td><p>Modal with <code class="language-plaintext highlighter-rouge">-webkit-overflow-scrolling: touch</code> doesn’t become scrollable after added text makes it taller</p>
 </td>
       <td>
     <a href="https://bugs.webkit.org/show_bug.cgi?id=158342">WebKit bug #158342</a>
@@ -1126,7 +1123,7 @@
     <tr>
       <td>Safari (iOS)
 </td>
-      <td><p>Don’t make <code class="highlighter-rouge">:hover</code> sticky on touch-friendly webpages</p>
+      <td><p>Don’t make <code class="language-plaintext highlighter-rouge">:hover</code> sticky on touch-friendly webpages</p>
 </td>
       <td>
     <a href="https://bugs.webkit.org/show_bug.cgi?id=158517">WebKit bug #158517</a>
@@ -1141,7 +1138,7 @@
     <tr>
       <td>Safari (iOS)
 </td>
-      <td><p>Element which is <code class="highlighter-rouge">position:fixed</code> disappears after opening a <code class="highlighter-rouge">&lt;select&gt;</code> menu</p>
+      <td><p>Element which is <code class="language-plaintext highlighter-rouge">position:fixed</code> disappears after opening a <code class="language-plaintext highlighter-rouge">&lt;select&gt;</code> menu</p>
 </td>
       <td>
     <a href="https://bugs.webkit.org/show_bug.cgi?id=162362">WebKit bug #162362</a>
@@ -1156,7 +1153,7 @@
     <tr>
       <td>Safari (iPad Pro)
 </td>
-      <td><p>Rendering of descendants of <code class="highlighter-rouge">position: fixed</code> element gets clipped on iPad Pro in Landscape orientation</p>
+      <td><p>Rendering of descendants of <code class="language-plaintext highlighter-rouge">position: fixed</code> element gets clipped on iPad Pro in Landscape orientation</p>
 </td>
       <td>
     <a href="https://bugs.webkit.org/show_bug.cgi?id=152637">WebKit bug #152637</a>, 
@@ -1209,7 +1206,7 @@
     <tr>
       <td>Edge
 </td>
-      <td><p>Implement the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:dir"><code class="highlighter-rouge">:dir()</code> pseudo-class</a> from Selectors Level 4</p>
+      <td><p>Implement the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:dir"><code class="language-plaintext highlighter-rouge">:dir()</code> pseudo-class</a> from Selectors Level 4</p>
 </td>
       <td>
     <a href="https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/suggestions/12299532">Edge UserVoice idea #12299532</a>
@@ -1224,7 +1221,7 @@
     <tr>
       <td>Edge
 </td>
-      <td><p>Implement the HTML5 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog"><code class="highlighter-rouge">&lt;dialog&gt;</code> element</a></p>
+      <td><p>Implement the HTML5 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog"><code class="language-plaintext highlighter-rouge">&lt;dialog&gt;</code> element</a></p>
 </td>
       <td>
     <a href="https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/suggestions/6508895">Edge UserVoice idea #6508895</a>
@@ -1239,7 +1236,7 @@
     <tr>
       <td>Edge
 </td>
-      <td><p>Fire a <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/transitioncancel_event"><code class="highlighter-rouge">transitioncancel</code> event</a> when a CSS transition is canceled</p>
+      <td><p>Fire a <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/transitioncancel_event"><code class="language-plaintext highlighter-rouge">transitioncancel</code> event</a> when a CSS transition is canceled</p>
 </td>
       <td>
     <a href="https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/suggestions/15939898">Edge UserVoice idea #15939898</a>
@@ -1254,7 +1251,7 @@
     <tr>
       <td>Edge
 </td>
-      <td><p>Implement the <a href="https://caniuse.com/#feat=css-nth-child-of"><code class="highlighter-rouge">of &lt;selector-list&gt;</code> clause</a> of the <code class="highlighter-rouge">:nth-child()</code> pseudo-class</p>
+      <td><p>Implement the <a href="https://caniuse.com/#feat=css-nth-child-of"><code class="language-plaintext highlighter-rouge">of &lt;selector-list&gt;</code> clause</a> of the <code class="language-plaintext highlighter-rouge">:nth-child()</code> pseudo-class</p>
 </td>
       <td>
     <a href="https://wpdev.uservoice.com/forums/257854-microsoft-edge-developer/suggestions/15944476">Edge UserVoice idea #15944476</a>
@@ -1269,7 +1266,7 @@
     <tr>
       <td>Firefox
 </td>
-      <td><p>Implement the <a href="https://caniuse.com/#feat=css-nth-child-of"><code class="highlighter-rouge">of &lt;selector-list&gt;</code> clause</a> of the <code class="highlighter-rouge">:nth-child()</code> pseudo-class</p>
+      <td><p>Implement the <a href="https://caniuse.com/#feat=css-nth-child-of"><code class="language-plaintext highlighter-rouge">of &lt;selector-list&gt;</code> clause</a> of the <code class="language-plaintext highlighter-rouge">:nth-child()</code> pseudo-class</p>
 </td>
       <td>
     <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=854148">Mozilla bug #854148</a>
@@ -1284,7 +1281,7 @@
     <tr>
       <td>Firefox
 </td>
-      <td><p>Implement the HTML5 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog"><code class="highlighter-rouge">&lt;dialog&gt;</code> element</a></p>
+      <td><p>Implement the HTML5 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog"><code class="language-plaintext highlighter-rouge">&lt;dialog&gt;</code> element</a></p>
 </td>
       <td>
     <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=840640">Mozilla bug #840640</a>
@@ -1314,7 +1311,7 @@
     <tr>
       <td>Chrome
 </td>
-      <td><p>Fire a <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/transitioncancel_event"><code class="highlighter-rouge">transitioncancel</code> event</a> when a CSS transition is canceled</p>
+      <td><p>Fire a <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/transitioncancel_event"><code class="language-plaintext highlighter-rouge">transitioncancel</code> event</a> when a CSS transition is canceled</p>
 </td>
       <td>
     <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=642487">Chromium issue #642487</a>
@@ -1329,7 +1326,7 @@
     <tr>
       <td>Chrome
 </td>
-      <td><p>Implement the <a href="https://caniuse.com/#feat=css-nth-child-of"><code class="highlighter-rouge">of &lt;selector-list&gt;</code> clause</a> of the <code class="highlighter-rouge">:nth-child()</code> pseudo-class</p>
+      <td><p>Implement the <a href="https://caniuse.com/#feat=css-nth-child-of"><code class="language-plaintext highlighter-rouge">of &lt;selector-list&gt;</code> clause</a> of the <code class="language-plaintext highlighter-rouge">:nth-child()</code> pseudo-class</p>
 </td>
       <td>
     <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=304163">Chromium issue #304163</a>
@@ -1344,7 +1341,7 @@
     <tr>
       <td>Chrome
 </td>
-      <td><p>Implement the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:dir"><code class="highlighter-rouge">:dir()</code> pseudo-class</a> from Selectors Level 4</p>
+      <td><p>Implement the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:dir"><code class="language-plaintext highlighter-rouge">:dir()</code> pseudo-class</a> from Selectors Level 4</p>
 </td>
       <td>
     <a href="https://bugs.chromium.org/p/chromium/issues/detail?id=576815">Chromium issue #576815</a>
@@ -1359,7 +1356,7 @@
     <tr>
       <td>Safari
 </td>
-      <td><p>Fire a <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/transitioncancel_event"><code class="highlighter-rouge">transitioncancel</code> event</a> when a CSS transition is canceled</p>
+      <td><p>Fire a <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/transitioncancel_event"><code class="language-plaintext highlighter-rouge">transitioncancel</code> event</a> when a CSS transition is canceled</p>
 </td>
       <td>
     <a href="https://bugs.webkit.org/show_bug.cgi?id=161535">WebKit bug #161535</a>
@@ -1374,7 +1371,7 @@
     <tr>
       <td>Safari
 </td>
-      <td><p>Implement the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:dir"><code class="highlighter-rouge">:dir()</code> pseudo-class</a> from Selectors Level 4</p>
+      <td><p>Implement the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/:dir"><code class="language-plaintext highlighter-rouge">:dir()</code> pseudo-class</a> from Selectors Level 4</p>
 </td>
       <td>
     <a href="https://bugs.webkit.org/show_bug.cgi?id=64861">WebKit bug #64861</a>
@@ -1389,7 +1386,7 @@
     <tr>
       <td>Safari
 </td>
-      <td><p>Implement the HTML5 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog"><code class="highlighter-rouge">&lt;dialog&gt;</code> element</a></p>
+      <td><p>Implement the HTML5 <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog"><code class="language-plaintext highlighter-rouge">&lt;dialog&gt;</code> element</a></p>
 </td>
       <td>
     <a href="https://bugs.webkit.org/show_bug.cgi?id=84635">WebKit bug #84635</a>

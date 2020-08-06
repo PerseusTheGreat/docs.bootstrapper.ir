@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
 <meta name="description" content="Documentation and examples for showing pagination to indicate a series of related content exists across multiple pages."/>
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors"/>
-<meta name="generator" content="Jekyll v4.0.1"/>
+<meta name="generator" content="Jekyll v4.1.1"/>
 
 <meta name="docsearch:language" content="en"/>
 <meta name="docsearch:version" content="4.5"/>
@@ -63,9 +63,10 @@
 
   </head>
   <body>
-    <a class="skippy sr-only sr-only-focusable" href="#content">
-  <span class="skippy-text">Skip to main content</span>
-</a>
+    <div class="skippy overflow-hidden">
+  <div class="container-xl">
+    <a class="sr-only sr-only-focusable d-inline-flex p-2 m-1" href="#content">Skip to main content</a><a class="sr-only sr-only-focusable d-none d-md-inline-flex p-2 m-1" href="#bd-docs-nav">Skip to docs navigation</a></div>
+</div>
 
 
     <header class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar">
@@ -105,13 +106,6 @@
       <div class="dropdown-menu dropdown-menu-md-left" aria-labelledby="bd-versions">
         <a class="dropdown-item active" href="/docs/4.5/">Latest RTL (4.5.x)</a>
         <a class="dropdown-item" href="https://getbootstrap.com/docs/4.5/">Latest LTR (4.5.x)</a>
-        <!--
-        <a class="dropdown-item" href="https://getbootstrap.com/docs/4.4/">v4.4.1</a>
-        <a class="dropdown-item" href="https://getbootstrap.com/docs/4.3/">v4.3.1</a>
-        <a class="dropdown-item" href="https://getbootstrap.com/docs/4.2/">v4.2.1</a>
-        <a class="dropdown-item" href="https://getbootstrap.com/docs/4.1/">v4.1.3</a>
-        <a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/">v4.0.0</a>
-        -->
         <div class="dropdown-divider"></div>
         <a class="dropdown-item" href="https://getbootstrap.com/docs/3.4/">v3.4.1</a>
         <a class="dropdown-item" href="https://getbootstrap.com/2.3.2/">v2.3.2</a>
@@ -488,16 +482,19 @@
         
 
         <main class="col-md-9 col-xl-8 py-md-3 pr-md-5 bd-content" role="main">
-          <h1 class="bd-title" id="content">Pagination</h1>
+          <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between">
+            <a class="btn btn-sm btn-bd-light my-2 my-md-0" href="https://github.com/PerseusTheGreat/bootstrap-4-rtl/tree/v4-dev/site/docs/4.5/components/pagination.md" title="View and edit this file on GitHub" target="_blank" rel="noopener">View on GitHub</a>
+            <h1 class="bd-title" id="content">Pagination</h1>
+          </div>
           <p class="bd-lead">Documentation and examples for showing pagination to indicate a series of related content exists across multiple pages.</p>
           <!--
 <script async src="https://cdn.carbonads.com/carbon.js?serve=CKYIKKJL&placement=getbootstrapcom" id="_carbonads_js"></script>
 -->
           <h2 id="overview">Overview</h2>
 
-<p>We use a large block of connected links for our pagination, making links hard to miss and easily scalable—all while providing large hit areas. Pagination is built with list HTML elements so screen readers can announce the number of available links. Use a wrapping <code class="highlighter-rouge">&lt;nav&gt;</code> element to identify it as a navigation section to screen readers and other assistive technologies.</p>
+<p>We use a large block of connected links for our pagination, making links hard to miss and easily scalable—all while providing large hit areas. Pagination is built with list HTML elements so screen readers can announce the number of available links. Use a wrapping <code class="language-plaintext highlighter-rouge">&lt;nav&gt;</code> element to identify it as a navigation section to screen readers and other assistive technologies.</p>
 
-<p>In addition, as pages likely have more than one such navigation section, it’s advisable to provide a descriptive <code class="highlighter-rouge">aria-label</code> for the <code class="highlighter-rouge">&lt;nav&gt;</code> to reflect its purpose. For example, if the pagination component is used to navigate between a set of search results, an appropriate label could be <code class="highlighter-rouge">aria-label="Search results pages"</code>.</p>
+<p>In addition, as pages likely have more than one such navigation section, it’s advisable to provide a descriptive <code class="language-plaintext highlighter-rouge">aria-label</code> for the <code class="language-plaintext highlighter-rouge">&lt;nav&gt;</code> to reflect its purpose. For example, if the pagination component is used to navigate between a set of search results, an appropriate label could be <code class="language-plaintext highlighter-rouge">aria-label="Search results pages"</code>.</p>
 
 <div class="bd-example">
 <nav aria-label="Page navigation example">
@@ -522,7 +519,7 @@
 
 <h2 id="working-with-icons">Working with icons</h2>
 
-<p>Looking to use an icon or symbol in place of text for some pagination links? Be sure to provide proper screen reader support with <code class="highlighter-rouge">aria</code> attributes.</p>
+<p>Looking to use an icon or symbol in place of text for some pagination links? Be sure to provide proper screen reader support with <code class="language-plaintext highlighter-rouge">aria</code> attributes.</p>
 
 <div class="bd-example">
 <nav aria-label="Page navigation example">
@@ -563,9 +560,9 @@
 
 <h2 id="disabled-and-active-states">Disabled and active states</h2>
 
-<p>Pagination links are customizable for different circumstances. Use <code class="highlighter-rouge">.disabled</code> for links that appear un-clickable and <code class="highlighter-rouge">.active</code> to indicate the current page.</p>
+<p>Pagination links are customizable for different circumstances. Use <code class="language-plaintext highlighter-rouge">.disabled</code> for links that appear un-clickable and <code class="language-plaintext highlighter-rouge">.active</code> to indicate the current page.</p>
 
-<p>While the <code class="highlighter-rouge">.disabled</code> class uses <code class="highlighter-rouge">pointer-events: none</code> to <em>try</em> to disable the link functionality of <code class="highlighter-rouge">&lt;a&gt;</code>s, that CSS property is not yet standardized and doesn’t account for keyboard navigation. As such, you should always add <code class="highlighter-rouge">tabindex="-1"</code> on disabled links and use custom JavaScript to fully disable their functionality.</p>
+<p>While the <code class="language-plaintext highlighter-rouge">.disabled</code> class uses <code class="language-plaintext highlighter-rouge">pointer-events: none</code> to <em>try</em> to disable the link functionality of <code class="language-plaintext highlighter-rouge">&lt;a&gt;</code>s, that CSS property is not yet standardized and doesn’t account for keyboard navigation. As such, you should always add <code class="language-plaintext highlighter-rouge">tabindex="-1"</code> on disabled links and use custom JavaScript to fully disable their functionality.</p>
 
 <div class="bd-example">
 <nav aria-label="...">
@@ -600,7 +597,7 @@
   <span class="nt">&lt;/ul&gt;</span>
 <span class="nt">&lt;/nav&gt;</span></code></pre></figure>
 
-<p>You can optionally swap out active or disabled anchors for <code class="highlighter-rouge">&lt;span&gt;</code>, or omit the anchor in the case of the prev/next arrows, to remove click functionality and prevent keyboard focus while retaining intended styles.</p>
+<p>You can optionally swap out active or disabled anchors for <code class="language-plaintext highlighter-rouge">&lt;span&gt;</code>, or omit the anchor in the case of the prev/next arrows, to remove click functionality and prevent keyboard focus while retaining intended styles.</p>
 
 <div class="bd-example">
 <nav aria-label="...">
@@ -643,7 +640,7 @@
 
 <h2 id="sizing">Sizing</h2>
 
-<p>Fancy larger or smaller pagination? Add <code class="highlighter-rouge">.pagination-lg</code> or <code class="highlighter-rouge">.pagination-sm</code> for additional sizes.</p>
+<p>Fancy larger or smaller pagination? Add <code class="language-plaintext highlighter-rouge">.pagination-lg</code> or <code class="language-plaintext highlighter-rouge">.pagination-sm</code> for additional sizes.</p>
 
 <div class="bd-example">
 <nav aria-label="...">
