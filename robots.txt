@@ -1,6 +1,5 @@
-# www.robotstxt.org/
-
+# www.robotstxt.org
 # Allow crawling of all content
 User-agent: *
 Disallow:
-Sitemap: http://docs.bootstrapper.ir/sitemap.xml
+Sitemap: https://bootstrapper.ir/sitemap.xml
