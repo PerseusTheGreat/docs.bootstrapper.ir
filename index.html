@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="The most popular HTML, CSS, and JS library in the world.">
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-<meta name="generator" content="Hugo 0.88.1">
+<meta name="generator" content="Hugo 0.101.0">
 
 <meta name="docsearch:language" content="en">
 <meta name="docsearch:version" content="4.6">
@@ -97,13 +97,12 @@
 
   <ul class="navbar-nav mr-md-auto">
     <li class="nav-item dropdown">
-      <a class="nav-item nav-link dropdown-toggle ml-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-expanded="false">
-        v4.6
-      </a>
-      <div class="dropdown-menu dropdown-menu-md-left" aria-labelledby="bd-versions">
+      <button class="btn nav-link dropdown-toggle ml-md-2" data-toggle="dropdown" aria-expanded="false">
+        <span class="sr-only">Bootstrap&nbsp;</span> v4.6 <span class="sr-only">(switch to other versions)</span>
+      </button>
+      <div class="dropdown-menu dropdown-menu-md-left">
         <a class="dropdown-item active" href="/docs/4.6/">Latest RTL (4.6.x)</a>
         <a class="dropdown-item" href="https://getbootstrap.com/docs/4.6/">Latest LTR (4.6.x)</a>
-        
         <div class="dropdown-divider"></div>
         <a class="dropdown-item" href="https://getbootstrap.com/docs/3.4/">v3.4.1</a>
         <a class="dropdown-item" href="https://getbootstrap.com/2.3.2/">v2.3.2</a>
@@ -155,7 +154,7 @@
           <a href="/docs/4.6/getting-started/download/" class="btn btn-lg btn-outline-secondary mb-3">Download</a>
         </div>
         <p class="text-muted mb-0">
-          Currently v4.6.1 RTL rev. 1
+          Currently v4.6.2 RTL rev. 1
         </p>
       </div>
     </div>
@@ -182,8 +181,8 @@
         <a class="btn btn-lg btn-outline-primary mb-3" href="/docs/4.6/getting-started/download/">Read installation docs</a>
       </div>
       <div class="col-md-7 pr-md-5">
-      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">npm install bootstrap</code></pre></div>
-      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh">gem install bootstrap -v 4.6.1 RTL rev. <span class="m">1</span></code></pre></div>
+      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">npm install @laylazi/bootstrap-rtl</span></span></code></pre></div>
+      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">gem install bootstrap -v 4.6.2</span></span></code></pre></div>
       </div>
     </div>
 
@@ -205,13 +204,13 @@
         <a class="btn btn-lg btn-outline-primary mb-3" href="/docs/4.6/layout/overview/">Explore the docs</a>
       </div>
       <div class="col-md-7 pr-md-5">
-      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="c">&lt;!-- CSS --&gt;</span>
-<span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css&#34;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;</span>
-</code></pre></div>
-      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="c">&lt;!-- jQuery and JavaScript Bundle with Popper --&gt;</span>
-<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
-</code></pre></div>
+      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="c">&lt;!-- CSS --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">link</span> <span class="na">href</span><span class="o">=</span><span class="s">&#34;https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css&#34;</span> <span class="na">rel</span><span class="o">=</span><span class="s">&#34;stylesheet&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;</span>
+</span></span></code></pre></div>
+      <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="c">&lt;!-- jQuery and JavaScript Bundle with Popper --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">script</span> <span class="na">src</span><span class="o">=</span><span class="s">&#34;https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js&#34;</span> <span class="na">integrity</span><span class="o">=</span><span class="s">&#34;sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct&#34;</span> <span class="na">crossorigin</span><span class="o">=</span><span class="s">&#34;anonymous&#34;</span><span class="p">&gt;&lt;/</span><span class="nt">script</span><span class="p">&gt;</span>
+</span></span></code></pre></div>
       </div>
     </div>
 
@@ -274,14 +273,15 @@
     <footer class="bd-footer text-muted">
   <div class="container-fluid p-3 p-md-5">
     <ul class="bd-footer-links">
-      <li><a href="https://github.com/twbs">GitHub</a></li>
+      <li><a href="https://github.com/twbs">GitHub (Official)</a></li>
+      <li><a href="https://github.com/PerseusTheGreat/bootstrap-4-rtl">GitHub (RTL)</a></li>
       <li><a href="https://twitter.com/getbootstrap">Twitter</a></li>
       <li><a href="/docs/4.6/examples/">Examples</a></li>
       <li><a href="/docs/4.6/about/overview/">About</a></li>
     </ul>
     <p>Designed and built with all the love in the world by the <a href="/docs/4.6/about/team/">Bootstrap team</a> with the help of <a href="https://github.com/PerseusTheGreat/bootstrap-4-rtl/graphs/contributors">our contributors</a>.</p>
     <p>RTL-ized by <a href="https://github.com/PerseusTheGreat" target="_blank" rel="noopener">Arash Laylazi</a>.</p>
-    <p>Currently v4.6.1 RTL rev. 1. Code licensed <a href="https://github.com/PerseusTheGreat/bootstrap-4-rtl/blob/main/LICENSE" target="_blank" rel="license noopener">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</a>.</p>
+    <p>Currently v4.6.2 RTL rev. 1. Code licensed <a href="https://github.com/PerseusTheGreat/bootstrap-4-rtl/blob/main/LICENSE" target="_blank" rel="license noopener">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</a>.</p>
   </div>
 </footer>
 

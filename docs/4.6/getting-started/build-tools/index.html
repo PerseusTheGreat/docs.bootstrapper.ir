@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="Learn how to use Bootstrap&rsquo;s included npm scripts to build our documentation, compile source code, run tests, and more.">
 <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-<meta name="generator" content="Hugo 0.88.1">
+<meta name="generator" content="Hugo 0.101.0">
 
 <meta name="docsearch:language" content="en">
 <meta name="docsearch:version" content="4.6">
@@ -98,13 +98,12 @@
 
   <ul class="navbar-nav mr-md-auto">
     <li class="nav-item dropdown">
-      <a class="nav-item nav-link dropdown-toggle ml-md-2" href="#" id="bd-versions" data-toggle="dropdown" aria-expanded="false">
-        v4.6
-      </a>
-      <div class="dropdown-menu dropdown-menu-md-left" aria-labelledby="bd-versions">
+      <button class="btn nav-link dropdown-toggle ml-md-2" data-toggle="dropdown" aria-expanded="false">
+        <span class="sr-only">Bootstrap&nbsp;</span> v4.6 <span class="sr-only">(switch to other versions)</span>
+      </button>
+      <div class="dropdown-menu dropdown-menu-md-left">
         <a class="dropdown-item active" href="/docs/4.6/">Latest RTL (4.6.x)</a>
         <a class="dropdown-item" href="https://getbootstrap.com/docs/4.6/">Latest LTR (4.6.x)</a>
-        
         <div class="dropdown-divider"></div>
         <a class="dropdown-item" href="https://getbootstrap.com/docs/3.4/">v3.4.1</a>
         <a class="dropdown-item" href="https://getbootstrap.com/2.3.2/">v2.3.2</a>
@@ -258,16 +257,16 @@
           
 
           <h2 id="tooling-setup">Tooling setup</h2>
-<p>Bootstrap uses <a href="https://docs.npmjs.com/misc/scripts/">npm scripts</a> for its build system. Our <a href="https://github.com/PerseusTheGreat/bootstrap-4-rtl/blob/v4.6.1 RTL rev. 1/package.json">package.json</a> includes convenient methods for working with the framework, including compiling code, running tests, and more.</p>
+<p>Bootstrap uses <a href="https://docs.npmjs.com/misc/scripts/">npm scripts</a> for its build system. Our <a href="https://github.com/PerseusTheGreat/bootstrap-4-rtl/blob/v4.6.2 RTL rev. 1/package.json">package.json</a> includes convenient methods for working with the framework, including compiling code, running tests, and more.</p>
 <p>To use our build system and run our documentation locally, you&rsquo;ll need a copy of Bootstrap&rsquo;s source files and Node. Follow these steps and you should be ready to rock:</p>
 <ol>
 <li><a href="https://nodejs.org/en/download/">Download and install Node.js</a>, which we use to manage our dependencies.</li>
 <li>Either <a href="https://github.com/PerseusTheGreat/bootstrap-4-rtl/">download Bootstrap&rsquo;s sources</a> or fork <a href="https://github.com/PerseusTheGreat/bootstrap-4-rtl">Bootstrap&rsquo;s repository</a>.</li>
-<li>Navigate to the root <code>/bootstrap</code> directory and run <code>npm install</code> to install our local dependencies listed in <a href="https://github.com/PerseusTheGreat/bootstrap-4-rtl/blob/v4.6.1 RTL rev. 1/package.json">package.json</a>.</li>
+<li>Navigate to the root <code>/bootstrap</code> directory and run <code>npm install</code> to install our local dependencies listed in <a href="https://github.com/PerseusTheGreat/bootstrap-4-rtl/blob/v4.6.2 RTL rev. 1/package.json">package.json</a>.</li>
 </ol>
 <p>When completed, you&rsquo;ll be able to run the various commands provided from the command line.</p>
 <h2 id="using-npm-scripts">Using npm scripts</h2>
-<p>Our <a href="https://github.com/PerseusTheGreat/bootstrap-4-rtl/blob/v4.6.1 RTL rev. 1/package.json">package.json</a> includes the following commands and tasks:</p>
+<p>Our <a href="https://github.com/PerseusTheGreat/bootstrap-4-rtl/blob/v4.6.2 RTL rev. 1/package.json">package.json</a> includes the following commands and tasks:</p>
 <table>
 <thead>
 <tr>
@@ -301,7 +300,7 @@
 <p>We increase the Sass rounding precision to 6 (by default, it&rsquo;s 5 in Node Sass) to prevent issues with browser rounding. If you use Dart Sass this won&rsquo;t be something you need to adjust, as that compiler uses a rounding precision of 10 and for efficiency reasons does not allow it to be adjusted.</p>
 <h2 id="autoprefixer">Autoprefixer</h2>
 <p>Bootstrap uses <a href="https://github.com/postcss/autoprefixer">Autoprefixer</a> (included in our build process) to automatically add vendor prefixes to some CSS properties at build time. Doing so saves us time and code by allowing us to write key parts of our CSS a single time while eliminating the need for vendor mixins like those found in v3.</p>
-<p>We maintain the list of browsers supported through Autoprefixer in a separate file within our GitHub repository. See <a href="https://github.com/PerseusTheGreat/bootstrap-4-rtl/blob/v4.6.1 RTL rev. 1/.browserslistrc">.browserslistrc</a> for details.</p>
+<p>We maintain the list of browsers supported through Autoprefixer in a separate file within our GitHub repository. See <a href="https://github.com/PerseusTheGreat/bootstrap-4-rtl/blob/v4.6.2 RTL rev. 1/.browserslistrc">.browserslistrc</a> for details.</p>
 <h2 id="local-documentation">Local documentation</h2>
 <p>Running our documentation locally requires the use of Hugo, which gets installed via the <a href="https://www.npmjs.com/package/hugo-bin">hugo-bin</a> npm package. Hugo is a blazingly fast and quite extensible static site generator that provides us: basic includes, Markdown-based files, templates, and more. Here&rsquo;s how to get it started:</p>
 <ol>
